@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background: #0e0e0e;
+}
+
+@font-face {
+  font-family: "LeagueGothic";
+  src: url("../fonts/leaguegothic.ttf") format("truetype");
+  font-style: Light;
+  font-weight: Light;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeue.ttc") format("truetype");
+  font-style: Medium;
+  font-weight: Medium;
+}
+
+p {
+  font-family: "HelveticaNeue";
+  font-size: 1.1vw;
+  letter-spacing: 0.2vw;
+  padding-top: 0.6vw;
+  line-height: 1.3vw;
+  text-transform: uppercase;
+  color: white;
+}
+
+.section1 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background: #0e0e0e;
+}
+
+.column {
+  display: flex;
+  flex-direction: row;
+  width: 62vw;
+  gap: 1vw;
+}
+.column img {
+  /* width: 16vw; */
+  height: 100vh;
+}
+
+.slider {
+  display: flex;
+  width: 38vw;
+  height: 100vh;
+}
+
+.slider_text {
+  display: none;
+  align-content: center;
+  margin-left: 7vw;
+}
+
+.slider_text h1 {
+  font-family: "LeagueGothic";
+  font-size: 8vw;
+  line-height: 7vw;
+  color: white;
+}
+
+.slider_picture {
+  align-content: center;
+  margin-left: 8vw;
+}
+
+.slider_picture img {
+  width: 20vw;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 24px;
+}
+
+.next {
+  margin-left: 31vw;
+}
