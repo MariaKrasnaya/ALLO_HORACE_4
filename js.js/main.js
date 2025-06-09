@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Получаем контейнер со слайдами
   const sliderWrapper = document.querySelector(".slider_wrapper");
 
-  // Получаем массив всех "слайдов"
+  // массив всех "слайдов"
   const slides = Array.from(sliderWrapper.children);
 
   // Устанавливаем текущий индекс активного слайда
@@ -19,10 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Показываем первый слайд при загрузке
+  // Первый слайд при загрузке
   showSlide(currentSlide);
 
-  // Кнопки навигации
+  // Кнопки навигации стрелочки
   const prevButton = document.querySelector(".arrow.prev");
   const nextButton = document.querySelector(".arrow.next");
 
