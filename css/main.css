@@ -21,6 +21,21 @@ body {
   font-weight: Medium;
 }
 
+h1 {
+  font-family: "LeagueGothic";
+  font-size: 8vw;
+  line-height: 7vw;
+  color: white;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "LeagueGothic";
+  font-size: 2vw;
+  color: white;
+  text-transform: uppercase;
+}
+
 p {
   font-family: "HelveticaNeue";
   font-size: 1.1vw;
@@ -42,17 +57,18 @@ p {
 .column {
   display: flex;
   flex-direction: row;
-  width: 62vw;
+  width: 59vw;
   gap: 1vw;
 }
+
 .column img {
-  /* width: 16vw; */
-  height: 100vh;
+  width: 19vw;
+  /* height: 100vh; */
 }
 
 .slider {
   display: flex;
-  width: 38vw;
+  width: 41vw;
   height: 100vh;
 }
 
@@ -60,13 +76,6 @@ p {
   display: none;
   align-content: center;
   margin-left: 7vw;
-}
-
-.slider_text h1 {
-  font-family: "LeagueGothic";
-  font-size: 8vw;
-  line-height: 7vw;
-  color: white;
 }
 
 .slider_picture {
@@ -81,14 +90,19 @@ p {
 .arrow {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
   background: rgba(0, 0, 0, 0.5);
   color: white;
-  border: none;
-  padding: 10px 15px;
+  border-color: #ffff;
+  border-radius: 50%;
+  padding: 12px 15px;
   cursor: pointer;
   z-index: 10;
   font-size: 24px;
+}
+
+.prev {
+  margin-left: 3vw;
 }
 
 .next {
@@ -117,4 +131,73 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/* второй экран */
+.section2 {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.intro_video {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 70vw;
+}
+
+.text_motion {
+  position: absolute;
+  margin-top: 10vw;
+  white-space: nowrap;
+  display: flex;
+  gap: 5vw;
+  /* animation: scrollText 30s linear infinite; */
+  z-index: 90;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.video {
+  width: auto;
+  /* padding: 4vw; */
+  height: 42vw;
+  opacity: 30%;
+}
+
+.video:hover {
+  opacity: 100%;
+  z-index: 100;
+  transform: scale(1.2);
+}
+
+.welcome {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 20vw;
+}
+
+.welcome_pics {
+  height: 20vw;
+  gap: 1vw;
+}
+
+.welcome_pics img {
+  height: 18vw;
+}
+.welcome_text {
+  width: 40vw;
+  height: 20vw;
+  padding: 4vw;
+  align-content: center;
 }
