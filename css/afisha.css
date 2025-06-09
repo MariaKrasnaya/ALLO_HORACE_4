@@ -1,0 +1,106 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  padding-top: 3vw;
+}
+
+nav img {
+  width: 10vw;
+  height: 14vw;
+}
+
+.nav_text p {
+  margin-left: 1vw;
+  line-height: 1.6vw;
+}
+
+.head_afisha {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  top: -2vw;
+  right: 0;
+  width: 100vw;
+}
+
+.lines_afisha {
+  align-self: center;
+  height: 6vw;
+}
+
+.lines_afisha img {
+  width: 95vw;
+  height: 10vw;
+}
+
+.head_afisha_text {
+  width: fit-content;
+  margin-right: 19vw;
+}
+
+.head_afisha_text p {
+  font-size: 1.1vw;
+  letter-spacing: 0.15vw;
+  color: white;
+  line-height: 1.4;
+}
+
+.events {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3vw;
+  padding-top: 23vw;
+}
+
+.events div {
+  margin-bottom: 2vw;
+}
+
+.events p {
+  margin: -0.3vw 0 0 0;
+}
+
+.posters {
+  position: absolute;
+  top: 13vw;
+  margin-left: 25vw;
+}
+
+.posters_1 img {
+  width: 71vw;
+}
+
+.posters_2 {
+  margin-top: 13vw;
+  margin-left: 17.8vw;
+}
+
+.posters_2 img {
+  width: 54vw;
+}
+
+.posters_3 {
+  margin-top: 20vw;
+  margin-left: 17.8vw;
+}
+
+.posters_3 img {
+  width: 53.5vw;
+}
+
+/* Скрываем все постеры по умолчанию */
+.posters_1,
+.posters_2,
+.posters_3 {
+  display: none;
+}
+
+/* Показываем активный постер */
+.posters_1.active,
+.posters_2.active,
+.posters_3.active {
+  display: block;
+}
