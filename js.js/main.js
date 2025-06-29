@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Слайдер в section1
   const sliderWrapper = document.querySelector(".slider_wrapper");
 
   // массив всех "слайдов"
@@ -35,5 +36,109 @@ document.addEventListener("DOMContentLoaded", function () {
   prevButton.addEventListener("click", () => {
     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
     showSlide(currentSlide);
+  });
+
+  // Интерактив с этажами башни
+  // Получаем элементы
+  const towerImage = document.getElementById("towerImage");
+  const picsFloor = document.querySelector(".pics_floor");
+
+  // Назначаем обработчики на этажи
+  document.querySelector(".point_view").addEventListener("click", function () {
+    towerImage.src = "./img/tower_1.svg";
+    picsFloor.innerHTML =
+      '<img src="./img/point_view_slideshow.gif" alt="площадка гифка">';
+  });
+
+  document.querySelector(".library").addEventListener("click", function () {
+    towerImage.src = "./img/tower_2.svg";
+    picsFloor.innerHTML =
+      '<img src="./img/library_slidehow.gif" alt="библиотека гифка">';
+  });
+
+  document
+    .querySelector(".telefon_room")
+    .addEventListener("click", function () {
+      towerImage.src = "./img/tower_3.svg";
+      picsFloor.innerHTML =
+        '<img src="./img/telefon_room_slideshow.gif" alt="телефонная гифка">';
+    });
+
+  document.querySelector(".main_floor").addEventListener("click", function () {
+    towerImage.src = "./img/tower_4.svg";
+    picsFloor.innerHTML =
+      '<img src="./img/first_floor_slideshow.gif" alt="вестибюль гифка">';
+  });
+
+  // Изменение текста в интерактиве с башней
+  const pointView = document.querySelector(".point_view");
+  const library = document.querySelector(".library");
+  const telefonRoom = document.querySelector(".telefon_room");
+  const mainFloor = document.querySelector(".main_floor");
+
+  const descriptionTitle = document.querySelector(".description h1");
+  const descriptionText = document.querySelector(".description p");
+
+  pointView.addEventListener("click", function () {
+    descriptionTitle.textContent = "ПЛОЩАДКА";
+    descriptionText.textContent =
+      "место для релаксации и изучения города с высоты птичьего полёта";
+  });
+
+  library.addEventListener("click", function () {
+    descriptionTitle.textContent = "БИБЛИОТЕКА";
+    descriptionText.textContent = "место для чтения, коворкинг, книжный архив";
+  });
+
+  telefonRoom.addEventListener("click", function () {
+    descriptionTitle.textContent = "ТЕЛЕФОННЫЙ ЗАЛ";
+    descriptionText.textContent =
+      "главный центр межвременной связи с философами древности";
+  });
+
+  mainFloor.addEventListener("click", function () {
+    descriptionTitle.textContent = "ВЕСТИБЮЛЬ";
+    descriptionText.textContent =
+      "место распределения по разным вопросам, кафе, читальные места";
+  });
+
+  // Окошко записи на посещение в центр
+  const descriptionButton = document.querySelector(".description_btn");
+  const overlay = document.getElementById("overlay");
+  const modal = document.getElementById("modal");
+  const submitButton = document.querySelector(".submit_btn");
+  const successPopup = document.getElementById("successPopup");
+
+  // Открыть форму
+  descriptionButton.addEventListener("click", function () {
+    overlay.style.display = "block";
+    modal.style.display = "block";
+  });
+
+  // Отправить форму
+  submitButton.addEventListener("click", function () {
+    const name = document.getElementById("name").value;
+    const date = document.getElementById("date").value;
+    const time = document.getElementById("time").value;
+    const email = document.getElementById("email").value;
+
+    if (name && date && time && email) {
+      modal.style.display = "none";
+      overlay.style.display = "none";
+      successPopup.style.display = "block";
+
+      // Убрать сообщение через 2 секунды
+      setTimeout(function () {
+        successPopup.style.display = "none";
+      }, 2000);
+    } else {
+      alert("Пожалуйста, заполните все поля.");
+    }
+  });
+
+  // Закрытие формы по клику на затемнение
+  overlay.addEventListener("click", function () {
+    modal.style.display = "none";
+    overlay.style.display = "none";
   });
 });

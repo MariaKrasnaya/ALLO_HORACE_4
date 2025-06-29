@@ -42,4 +42,32 @@ document.addEventListener("DOMContentLoaded", function () {
   eventThree.addEventListener("mouseleave", function () {
     hideAllPosters();
   });
+
+  // Анимация текста печатная машинка
+  const typewriterElement = document.getElementById("typewriter");
+
+  // Массив строк (строки — как параграфы между <br>)
+  const lines = [
+    "совет от горация, особенности центра",
+    "и межвременной связи, распродажа старых TV",
+    "для конференций через века? Да, ознакомиться",
+    "со списком крутых мероприятий можно ниже",
+  ];
+
+  // Объединяем строки, добавляя <br> между ними
+  const fullText = lines.join("<br>");
+
+  let currentIndex = 0;
+  const speed = 35;
+
+  function typeLetter() {
+    if (currentIndex <= fullText.length) {
+      const nextChar = fullText.slice(0, currentIndex);
+      typewriterElement.innerHTML = nextChar;
+      currentIndex += 1;
+      setTimeout(typeLetter, speed);
+    }
+  }
+
+  typeLetter();
 });

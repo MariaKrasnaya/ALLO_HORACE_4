@@ -23,7 +23,7 @@
           <a href="merch.html"><p>МЕРЧ</p></a>
         </li>
         <li>
-          <a href="contact.html"><p>ШИФР</p></a>
+          <a href="https://mariakrasnaya.github.io/ALLO_site_interactiv/"><p>ШИФР</p></a>
         </li>
       </ul>
     </nav>
@@ -47,29 +47,29 @@
         <button class="arrow prev">←</button>
         <button class="arrow next">→</button>
       </div>
-
       <div class="column">
-        <div class="column1">
+        <a href="afisha.html" class="column1">
           <img src="./img/1column.svg" alt="первый раздел" />
-        </div>
-
-        <div class="column2">
+        </a>
+      
+        <a href="merch.html" class="column2">
           <img src="./img/2column.svg" alt="второй раздел" />
-        </div>
-        <div class="column3">
+        </a>
+      
+        <a href="https://mariakrasnaya.github.io/ALLO_site_interactiv/" class="column3" target="_blank">
           <img src="./img/3column.svg" alt="третий раздел" />
-        </div>
+        </a>
       </div>
     </section>
 
     <!-- второй экран -->
     <section class="section2">
       <div class="intro_video">
-        <div class="text_motion">
-          <div><h1>консультации</h1></div>
-          <div><h1>вид на город</h1></div>
-          <div><h1>отдых</h1></div>
-          <div><h1>вдохновение</h1></div>
+        <div class="text_video">
+          
+            <h1>консультации <br>вид на город <br>отдых <br>вдохновение</h1>
+            
+          </div>
         </div>
         <img
           class="video"
@@ -96,12 +96,12 @@
     <section class="section3">
       <div class="tower_floors">
         <div class="tower">
-          <img src="./img/tower.svg" alt="вектор башня" />
+          <img id="towerImage" src="./img/tower.svg" alt="изображение башни" />
           <div class="floors_name">
-            <div><h3>ПЛОЩАДКА</h3></div>
-            <div><h3>БИБЛИОТЕКА</h3></div>
-            <div><h3>ТЕЛЕФОННЫЙ ЗАЛ</h3></div>
-            <div><h3>ВЕСТИБЮЛЬ</h3></div>
+            <div class="point_view"><h3>ПЛОЩАДКА</h3></div>
+            <div class="library"><h3>БИБЛИОТЕКА</h3></div>
+            <div class="telefon_room"><h3>ТЕЛЕФОННЫЙ ЗАЛ</h3></div>
+            <div class="main_floor"><h3>ВЕСТИБЮЛЬ</h3></div>
           </div>
         </div>
         <div class="pics_floor"></div>
@@ -111,12 +111,42 @@
           <h1>выбери этаж</h1>
           <p>изучи центр подробнее</p>
         </div>
+
         <div>
           <button class="description_btn"><p>ПОСЕТИТЬ ЦЕНТР</p></button>
         </div>
       </div>
+<!--  -->
+      <!--  -->
+<!--  -->
+      <!-- Затемнение -->
+<div class="overlay" id="overlay"></div>
 
-      <div class="footer">
+<!-- Модальная форма -->
+<div class="modal" id="modal">
+  <div class="modal_content">
+    <p>Ваше имя:</p>
+    <input type="text" id="name" />
+
+    <p>Желаемая дата посещения:</p>
+    <input type="date" id="date" />
+
+    <p>Желаемое время посещения:</p>
+    <input type="time" id="time" />
+
+    <p>Почта:</p>
+    <input type="email" id="email" />
+
+    <button class="submit_btn"><p>отправить запрос на посещение</p></button>
+  </div>
+</div>
+
+<!-- Уведомление -->
+<div class="success_popup" id="successPopup">
+  <p>ваш запрос на рассмотрении,<br />ожидайте ответного письма</p>
+</div>
+
+      <div class="footer_main">
         <div><h3>АЛЛО, ГОРАЦИЙ</h3></div>
         <div><h3>ЦЕНТР КОНСУЛЬТАЦИИ ЧЕРЕЗ ВЕКА</h3></div>
         <div>

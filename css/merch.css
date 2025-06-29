@@ -26,6 +26,48 @@ nav img {
   color: #004cdc;
 }
 
+.circle_nav_merch {
+  position: absolute;
+  margin-top: -1vw;
+  margin-left: 8vw;
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50vw;
+  background-color: #004cdc;
+  animation: move_3 2s ease-in-out infinite;
+}
+
+@keyframes move_3 {
+  0% {
+    margin-top: 2vw;
+    margin-left: 6vw;
+  }
+  14% {
+    margin-top: -1vw;
+    margin-left: 2vw;
+  }
+  28% {
+    margin-top: 4vw;
+    margin-left: 7vw;
+  }
+  42% {
+    margin-top: 4vw;
+    margin-left: 2vw;
+  }
+  56% {
+    margin-top: 4vw;
+    margin-left: 7vw;
+  }
+  70% {
+    margin-top: -1vw;
+    margin-left: 2vw;
+  }
+  100% {
+    margin-top: 2vw;
+    margin-left: 6vw;
+  }
+}
+
 .head_merch {
   position: absolute;
   display: flex;

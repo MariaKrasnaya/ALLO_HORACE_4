@@ -15,6 +15,7 @@ nav {
   position: fixed;
   padding-top: 3vw;
   z-index: 1000;
+  margin-left: 2vw;
 }
 
 nav a {
@@ -33,6 +34,48 @@ nav img {
 
 .nav_text p:hover {
   color: #004cdc;
+}
+
+.circle_nav_afisha {
+  position: absolute;
+  margin-top: -1vw;
+  margin-left: 8vw;
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50vw;
+  background-color: #004cdc;
+  animation: move_2 2s ease-in-out infinite;
+}
+
+@keyframes move_2 {
+  0% {
+    margin-top: -1vw;
+    margin-left: 6vw;
+  }
+  14% {
+    margin-top: -1vw;
+    margin-left: 2vw;
+  }
+  28% {
+    margin-top: 4vw;
+    margin-left: 7vw;
+  }
+  42% {
+    margin-top: 4vw;
+    margin-left: 2vw;
+  }
+  56% {
+    margin-top: 4vw;
+    margin-left: 7vw;
+  }
+  70% {
+    margin-top: -1vw;
+    margin-left: 2vw;
+  }
+  100% {
+    margin-top: -1vw;
+    margin-left: 6vw;
+  }
 }
 
 .head_afisha {
@@ -154,7 +197,7 @@ nav img {
   justify-content: space-between;
   align-items: center;
   padding: 3vw;
-  width: 100vw;
+  width: 99vw;
   height: 9vw;
   background-color: #004cdc;
   margin-top: 4vw;
