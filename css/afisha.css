@@ -78,6 +78,11 @@ nav img {
   }
 }
 
+.section_afisha_1 {
+  width: 100vw;
+  height: 20vw;
+}
+
 .head_afisha {
   position: absolute;
   display: flex;
@@ -110,11 +115,15 @@ nav img {
   line-height: 1.4;
 }
 
+.section_afisha_2 {
+  width: 100vw;
+  height: 52vw;
+}
+
 .events {
   display: flex;
   flex-direction: column;
   padding-left: 3vw;
-  padding-top: 23vw;
 }
 
 .event_1,
@@ -191,6 +200,11 @@ nav img {
   background-color: #474747;
 }
 
+.section_afisha_3 {
+  width: 100vw;
+  height: 9vw;
+}
+
 .footer {
   display: flex;
   flex-direction: row;
@@ -200,7 +214,6 @@ nav img {
   width: 99vw;
   height: 9vw;
   background-color: #004cdc;
-  margin-top: 4vw;
 }
 
 .footer h3 {

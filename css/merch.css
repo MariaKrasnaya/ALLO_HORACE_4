@@ -68,6 +68,106 @@ nav img {
   }
 }
 
+.cart-container {
+  position: fixed;
+  top: 3vw;
+  right: 3vw;
+  z-index: 1001;
+}
+
+.cart-icon {
+  position: relative;
+  background-color: white;
+  border-radius: 50%;
+  width: 4vw;
+  height: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0.3vw 0.6vw rgba(0, 0, 0, 0.2);
+}
+
+.cart-icon img {
+  width: 2vw;
+  height: 2vw;
+}
+
+.cart-count {
+  position: absolute;
+  top: -0.5vw;
+  right: -0.5vw;
+  background-color: #004cdc;
+  color: white;
+  border-radius: 50%;
+  width: 1.5vw;
+  height: 1.5vw;
+  font-size: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 320px;
+  height: 100%;
+  background-color: #004cdc;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  transition: left 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-drawer.open {
+  left: 0;
+  width: 20vw;
+  z-index: 2000;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-content {
+  padding: 16px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.cart-item p {
+  margin: 0;
+}
+
+button#closeCart {
+  border-radius: 5vw;
+  color: blue;
+  border: white;
+  width: 2vw;
+  height: 2vw;
+}
+
 .head_merch {
   position: absolute;
   display: flex;
@@ -124,8 +224,13 @@ nav img {
 .product-image img {
   width: 14.5vw;
 }
+
 .product-info {
   width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* можно убрать, если используешь margin-top: auto */
+  height: 97%;
 }
 
 .product-info h3 {
@@ -146,12 +251,36 @@ nav img {
 .base_btn {
   width: 14vw;
   height: 4vw;
-  margin-top: 6.5vw;
   background-color: #004cdc;
   border: 1px solid white;
   cursor: pointer;
+  margin-top: auto;
 }
 
 .base_btn:hover {
   background-color: #316ad5;
+}
+
+.just-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vw;
+  background-color: #004cdc;
+  border-radius: 1vw;
+  box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
+  padding: 1vw;
+  transition: transform 0.3s ease;
+}
+
+.just_btn {
+  width: 14vw;
+  height: 4vw;
+  background-color: #004cdc;
+  border: 1px solid #004cdc;
+  cursor: pointer;
+}
+
+.just-card:hover {
+  transform: scale(1.02);
 }

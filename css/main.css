@@ -231,9 +231,9 @@ p {
 }
 
 .video {
-  width: 69vw;
-  padding: 4vw;
-  height: 43vw;
+  width: 71vw;
+  padding: 5vw;
+  height: 44vw;
   opacity: 30%;
   cursor: pointer;
 }
@@ -245,8 +245,8 @@ p {
 }
 
 img.video {
-  border-radius: 5vw;
-  margin-left: 15vw;
+  border-radius: 6vw;
+  margin-left: 14vw;
 }
 
 .welcome {
