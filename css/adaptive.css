@@ -28,7 +28,7 @@
   }
 
   nav {
-    margin-left: -3vw;
+    margin-left: -2vw;
   }
 
   nav img {
@@ -82,7 +82,7 @@
 
   .head_afisha_text {
     width: 89vw;
-    margin-right: 5vw;
+    margin-right: 6vw;
   }
 
   .head_afisha_text p {
@@ -137,6 +137,131 @@
     width: 100vw;
     height: 15vw;
     background-color: #004cdc;
+  }
+
+  /* Страница мерча */
+  .circle_nav_merch {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  @keyframes move_3 {
+    0% {
+      margin-top: -2vw;
+      margin-left: 20vw;
+    }
+    14% {
+      margin-top: -1vw;
+      margin-left: 6vw;
+    }
+    28% {
+      margin-top: 4vw;
+      margin-left: 21vw;
+    }
+    42% {
+      margin-top: 4vw;
+      margin-left: 6vw;
+    }
+    56% {
+      margin-top: 4vw;
+      margin-left: 21vw;
+    }
+    70% {
+      margin-top: -1vw;
+      margin-left: 6vw;
+    }
+    100% {
+      margin-top: -2vw;
+      margin-left: 20vw;
+    }
+  }
+  .section_merch_1 {
+    height: 64vw;
+  }
+
+  .head_merch {
+    width: 97vw;
+    margin-top: 50vw;
+  }
+
+  .head_merch_text {
+    width: 89vw;
+    margin-right: 6vw;
+  }
+
+  .head_merch_text p {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+
+  .lines_merch {
+    display: none;
+  }
+
+  .section_merch_2 {
+    width: 100vw;
+    height: 149vw;
+  }
+
+  .shop-grid {
+    margin-left: 2vw;
+  }
+
+  .product-info h3 {
+    font-size: 4vw;
+  }
+
+  .cart-icon {
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .cart-icon img {
+    width: 5vw;
+    height: 4vw;
+  }
+
+  .cart-count {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+
+  .product-card {
+    height: 35vw;
+  }
+
+  .shop-grid {
+    grid-template-columns: repeat(2, 46vw);
+  }
+
+  .product-image img {
+    width: 22.5vw;
+  }
+
+  .base_btn {
+    width: 19vw;
+    height: 9vw;
+  }
+
+  .cart-drawer.open {
+    width: 50vw;
+  }
+
+  .just-card {
+    height: 35vw;
+  }
+
+  .footer h3 {
+    font-size: 4vw;
+  }
+
+  button#closeCart {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  .cart-header h2 {
+    font-size: 4vw;
   }
 }
 

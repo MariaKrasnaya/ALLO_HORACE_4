@@ -68,6 +68,10 @@ nav img {
   }
 }
 
+.section_merch_1 {
+  width: 100vw;
+  height: 20vw;
+}
 .cart-container {
   position: fixed;
   top: 3vw;
@@ -193,8 +197,12 @@ button#closeCart {
   margin-right: 19vw;
 }
 
+.section_merch_2 {
+  width: 100vw;
+  height: 90vw;
+}
+
 .shop-grid {
-  margin-top: 22vw;
   margin-left: 16vw;
   display: grid;
   grid-template-columns: repeat(2, 39vw);
@@ -283,4 +291,9 @@ button#closeCart {
 
 .just-card:hover {
   transform: scale(1.02);
+}
+
+.section_merch_3 {
+  width: 100vw;
+  height: 9vw;
 }
