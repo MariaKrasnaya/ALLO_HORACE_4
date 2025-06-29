@@ -7,6 +7,154 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1366px) {
+  /* Страница главная */
+
+  .circle_nav {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  @keyframes move {
+    0% {
+      margin-top: -9vw;
+      margin-left: 20vw;
+    }
+    14% {
+      margin-top: -1vw;
+      margin-left: 6vw;
+    }
+    28% {
+      margin-top: 4vw;
+      margin-left: 21vw;
+    }
+    42% {
+      margin-top: 4vw;
+      margin-left: 6vw;
+    }
+    56% {
+      margin-top: 4vw;
+      margin-left: 21vw;
+    }
+    70% {
+      margin-top: -1vw;
+      margin-left: 6vw;
+    }
+    100% {
+      margin-top: -9vw;
+      margin-left: 20vw;
+    }
+  }
+
+  .section_main_1 {
+    height: 157vw;
+    flex-direction: column;
+  }
+
+  .slider {
+    width: 98vw;
+    justify-content: center;
+  }
+
+  .arrow {
+    margin-top: 25.2vw;
+    padding: 2.3vw 2.4vw;
+    font-size: 5vw;
+  }
+
+  .prev {
+    margin-left: -83vw;
+  }
+
+  .next {
+    margin-left: 82vw;
+  }
+
+  .slider_picture img {
+    width: 20vw;
+    margin-left: 10vw;
+  }
+
+  .slider_wrapper {
+    width: 63vw;
+  }
+
+  .slider_wrapper .active p {
+    width: 60vw;
+    margin-left: 0vw;
+  }
+
+  .column img {
+    width: 32vw;
+    border-radius: 1vw;
+  }
+
+  img.video {
+    margin-left: 3vw;
+  }
+
+  .video {
+    width: 92vw;
+    padding: 5vw;
+    height: 63vw;
+  }
+
+  .welcome {
+    flex-direction: column;
+    height: 46vw;
+  }
+
+  .welcome_text {
+    width: 95vw;
+    margin-top: 12vw;
+  }
+
+  .welcome_pics img {
+    height: 32vw;
+  }
+
+  .tower_floors {
+    flex-direction: column;
+  }
+
+  .tower img {
+    margin-top: 45.2vw;
+    width: 89vw;
+  }
+
+  .floors_name {
+    width: 69vw;
+    margin-top: -59.9vw;
+    line-height: 15vw;
+    margin-left: 14vw;
+  }
+
+  .pics_floor img {
+    width: 35vw;
+    height: 35vw;
+    margin-top: 11vw;
+    margin-left: 3vw;
+  }
+
+  .floor_description {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 99vw;
+    height: 40vw;
+    gap: 3vw;
+    margin-top: 141vw;
+  }
+
+  .description_btn {
+    width: 38vw;
+    height: 7vw;
+    margin-left: 3vw;
+  }
+
+  .section_main_3 {
+    height: 220vw;
+  }
+
   /* Страница афиши */
 
   h1 {
