@@ -21,6 +21,16 @@ body {
   font-weight: Medium;
 }
 
+.nav_main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  padding-top: 3vw;
+  z-index: 1000;
+  margin-left: 2vw;
+}
+
 .nav_active {
   color: #004cdc;
 }
@@ -86,6 +96,7 @@ h3 {
   font-size: 2vw;
   color: white;
 }
+
 p {
   font-family: "HelveticaNeue";
   font-size: 1.1vw;
@@ -113,7 +124,6 @@ p {
 
 .column img {
   width: 19vw;
-  /* height: 100vh; */
   border-radius: 0vw 0vw 1vw 1vw;
 }
 
@@ -195,7 +205,7 @@ p {
   justify-content: center;
 }
 
-/* второй экран */
+/* Второй блок */
 .section_main_2 {
   display: flex;
   flex-direction: column;
@@ -279,6 +289,7 @@ img.video {
   align-content: center;
 }
 
+/* Третий блок */
 .section_main_3 {
   width: 100vw;
   height: 55vw;
@@ -356,7 +367,6 @@ floors_name div {
   background-color: #6d9ffd;
 }
 
-/* Затемнение */
 .overlay {
   position: fixed;
   top: 0;
@@ -368,7 +378,7 @@ floors_name div {
   display: none;
 }
 
-/* Модалка */
+/* Модальное окно */
 .modal {
   position: fixed;
   top: 50%;
@@ -398,7 +408,6 @@ floors_name div {
   border-radius: 0.5vw;
 }
 
-/* Кнопка отправки */
 .submit_btn {
   background-color: #004cdc;
   color: white;
@@ -413,7 +422,6 @@ floors_name div {
   background-color: #6d9ffd;
 }
 
-/* Уведомление */
 .success_popup {
   position: fixed;
   top: 6vw;
@@ -429,6 +437,7 @@ floors_name div {
   display: none;
 }
 
+/* Четвертый блок */
 .section_main_4 {
   width: 100vw;
   height: 9vw;

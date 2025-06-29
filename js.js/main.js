@@ -1,11 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Слайдер в section1
+  // Навигация
+  const navigation = document.querySelector(".nav_main");
+  const initialOffset = navigation.offsetTop;
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY >= initialOffset) {
+      navigation.classList.add("sticky");
+    } else {
+      navigation.classList.remove("sticky");
+    }
+  });
+
+  // Интерактив со слайдером в section1
   const sliderWrapper = document.querySelector(".slider_wrapper");
 
-  // массив всех "слайдов"
   const slides = Array.from(sliderWrapper.children);
 
-  // Устанавливаем текущий индекс активного слайда
   let currentSlide = 0;
 
   // Функция для отображения нужного слайда
@@ -26,24 +36,20 @@ document.addEventListener("DOMContentLoaded", function () {
   const prevButton = document.querySelector(".arrow.prev");
   const nextButton = document.querySelector(".arrow.next");
 
-  // Обработка клика по кнопке "вперёд"
   nextButton.addEventListener("click", () => {
     currentSlide = (currentSlide + 1) % slides.length;
     showSlide(currentSlide);
   });
 
-  // Обработка клика по кнопке "назад"
   prevButton.addEventListener("click", () => {
     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
     showSlide(currentSlide);
   });
 
   // Интерактив с этажами башни
-  // Получаем элементы
   const towerImage = document.getElementById("towerImage");
   const picsFloor = document.querySelector(".pics_floor");
 
-  // Назначаем обработчики на этажи
   document.querySelector(".point_view").addEventListener("click", function () {
     towerImage.src = "./img/tower_1.svg";
     picsFloor.innerHTML =
@@ -127,7 +133,6 @@ document.addEventListener("DOMContentLoaded", function () {
       overlay.style.display = "none";
       successPopup.style.display = "block";
 
-      // Убрать сообщение через 2 секунды
       setTimeout(function () {
         successPopup.style.display = "none";
       }, 2000);

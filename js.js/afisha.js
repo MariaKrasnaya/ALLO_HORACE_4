@@ -1,15 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Получаем блоки событий
+  // Интерактив с постерами
   let eventOne = document.querySelector(".event_1");
   let eventTwo = document.querySelector(".event_2");
   let eventThree = document.querySelector(".event_3");
 
-  // Получаем блоки постеров
   let posterOne = document.querySelector(".posters_1");
   let posterTwo = document.querySelector(".posters_2");
   let posterThree = document.querySelector(".posters_3");
 
-  // Скрываем все постеры
   function hideAllPosters() {
     posterOne.classList.remove("active");
     posterTwo.classList.remove("active");
@@ -43,10 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
     hideAllPosters();
   });
 
-  // Анимация текста печатная машинка
+  // Анимация текста
   const typewriterElement = document.getElementById("typewriter");
-
-  // Массив строк (строки — как параграфы между <br>)
   const lines = [
     "совет от горация, особенности центра",
     "и межвременной связи, распродажа старых TV",
@@ -54,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
     "со списком крутых мероприятий можно ниже",
   ];
 
-  // Объединяем строки, добавляя <br> между ними
   const fullText = lines.join("<br>");
 
   let currentIndex = 0;

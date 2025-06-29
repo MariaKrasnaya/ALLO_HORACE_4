@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Анимация текста
   const merchElement = document.getElementById("typewriter_merch");
 
   const merchLines = [
@@ -32,23 +33,21 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", function () {
       const currentText = button.querySelector("p").innerText;
 
-      // Если товар уже добавлен — ничего не делаем
+      // Если товар уже добавлен, ничего не делаем
       if (currentText === "В КОРЗИНЕ") return;
 
-      // Увеличиваем счётчик
       cartCount += 1;
       cartCountElement.textContent = cartCount;
 
-      // Меняем текст кнопки
+      // Изменить текст кнопки
       button.querySelector("p").innerText = "В КОРЗИНЕ";
 
-      // Блокируем повторное добавление визуально (по желанию)
       button.style.opacity = "0.7";
       button.style.pointerEvents = "none";
     });
   });
 
-  // открытие/закрытие шторки корзины
+  // Открытие/закрытие шторки корзины
   const cartDrawerElement = document.getElementById("cartDrawer");
   const closeCartButton = document.getElementById("closeCart");
   const cartIconElement = document.querySelector(".cart-icon");

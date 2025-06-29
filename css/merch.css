@@ -237,7 +237,7 @@ button#closeCart {
   width: 20vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* можно убрать, если используешь margin-top: auto */
+  justify-content: space-between;
   height: 97%;
 }
 
