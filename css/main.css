@@ -21,6 +21,51 @@ body {
   font-weight: Medium;
 }
 
+.nav_active {
+  color: #004cdc;
+}
+.circle_nav {
+  position: absolute;
+  margin-top: -1vw;
+  margin-left: 8vw;
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50vw;
+  background-color: aqua;
+  animation: move 2s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+    margin-top: -1vw;
+    margin-left: 8vw;
+  }
+  14% {
+    margin-top: -1vw;
+    margin-left: 3vw;
+  }
+  28% {
+    margin-top: 4vw;
+    margin-left: 8vw;
+  }
+  42% {
+    margin-top: 4vw;
+    margin-left: 3vw;
+  }
+  56% {
+    margin-top: 4vw;
+    margin-left: 8vw;
+  }
+  70% {
+    margin-top: -1vw;
+    margin-left: 3vw;
+  }
+  100% {
+    margin-top: -1vw;
+    margin-left: 8vw;
+  }
+}
+
 h1 {
   font-family: "LeagueGothic";
   font-size: 8vw;
@@ -36,6 +81,11 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-family: "LeagueGothic";
+  font-size: 2vw;
+  color: white;
+}
 p {
   font-family: "HelveticaNeue";
   font-size: 1.1vw;
@@ -66,6 +116,10 @@ p {
   /* height: 100vh; */
 }
 
+.column1 {
+  align-items: center;
+}
+
 .slider {
   display: flex;
   width: 41vw;
@@ -90,15 +144,14 @@ p {
 .arrow {
   position: absolute;
   top: 50%;
-  /* transform: translateY(-50%); */
   background: rgba(0, 0, 0, 0.5);
   color: white;
   border-color: #ffff;
   border-radius: 50%;
-  padding: 12px 15px;
+  padding: 0.3vw 0.4vw;
   cursor: pointer;
   z-index: 10;
-  font-size: 24px;
+  font-size: 1vw;
 }
 
 .prev {
@@ -106,7 +159,7 @@ p {
 }
 
 .next {
-  margin-left: 31vw;
+  margin-left: 36vw;
 }
 
 .slider_wrapper {
@@ -138,7 +191,7 @@ p {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
+  height: 60vw;
 }
 
 .intro_video {
@@ -168,8 +221,8 @@ p {
 }
 
 .video {
-  width: auto;
-  /* padding: 4vw; */
+  width: 68vw;
+  padding: 4vw;
   height: 42vw;
   opacity: 30%;
 }
@@ -188,16 +241,76 @@ p {
 }
 
 .welcome_pics {
+  display: flex;
   height: 20vw;
   gap: 1vw;
+  transition: transform 0.3s ease;
 }
 
 .welcome_pics img {
   height: 18vw;
 }
+
+.welcome_pics img:hover {
+  transform: scale(1.02);
+}
+
 .welcome_text {
   width: 40vw;
   height: 20vw;
   padding: 4vw;
   align-content: center;
+}
+
+.tower {
+  width: 37vw;
+}
+
+.tower_floors {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 43vw;
+  margin-top: 4vw;
+}
+
+.tower img {
+  width: 35vw;
+  margin-left: 3vw;
+}
+
+.floors_name {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 30vw;
+  margin-top: -23.9vw;
+  text-align: center;
+  line-height: 6vw;
+  margin-left: 10vw;
+}
+
+.floor_description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100vw;
+  height: 18vw;
+  background-color: #004cdc;
+  gap: 44vw;
+}
+
+.description {
+  margin-left: 3vw;
+}
+
+.description_btn {
+  width: 16vw;
+  height: 4vw;
+  background-color: #004cdc;
+  border: 1px solid white;
+}
+
+.description_btn:hover {
+  background-color: #6d9ffd;
 }

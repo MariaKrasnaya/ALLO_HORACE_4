@@ -1,9 +1,24 @@
+p {
+  font-family: "HelveticaNeue";
+  font-size: 1.1vw;
+  letter-spacing: 0.2vw;
+  padding-top: 0.6vw;
+  line-height: 1.3vw;
+  text-transform: uppercase;
+  color: white;
+}
+
 nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   position: fixed;
   padding-top: 3vw;
+  z-index: 1000;
+}
+
+nav a {
+  text-decoration: none;
 }
 
 nav img {
@@ -11,9 +26,13 @@ nav img {
   height: 14vw;
 }
 
-.nav_text p {
+.nav_text {
   margin-left: 1vw;
   line-height: 1.6vw;
+}
+
+.nav_text p:hover {
+  color: #004cdc;
 }
 
 .head_afisha {
@@ -53,6 +72,12 @@ nav img {
   flex-direction: column;
   padding-left: 3vw;
   padding-top: 23vw;
+}
+
+.event_1,
+.event_2,
+.event_3 {
+  cursor: pointer;
 }
 
 .events div {
@@ -103,4 +128,40 @@ nav img {
 .posters_2.active,
 .posters_3.active {
   display: block;
+}
+
+.line_footer img {
+  width: 94vw;
+  height: 10vw;
+  margin-left: 3vw;
+}
+
+.afisha_btn {
+  width: 16vw;
+  height: 4vw;
+  margin-left: 44vw;
+  background-color: #0e0e0e;
+  border: 1px solid white;
+}
+
+.afisha_btn:hover {
+  background-color: #474747;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vw;
+  width: 100vw;
+  height: 9vw;
+  background-color: #004cdc;
+  margin-top: 4vw;
+}
+
+.footer h3 {
+  font-family: "LeagueGothic";
+  font-size: 2vw;
+  color: white;
 }

@@ -1,0 +1,115 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  padding-top: 3vw;
+  z-index: 1000;
+  top: 0;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav img {
+  width: 10vw;
+  height: 14vw;
+}
+
+.nav_text {
+  margin-left: 1vw;
+  line-height: 1.6vw;
+}
+
+.nav_text p:hover {
+  color: #004cdc;
+}
+
+.head_merch {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  top: -2vw;
+  right: 0;
+  width: 100vw;
+}
+
+.lines_merch {
+  align-self: center;
+  height: 6vw;
+}
+
+.lines_merch img {
+  width: 95vw;
+  height: 10vw;
+}
+
+.head_merch_text {
+  width: fit-content;
+  margin-right: 19vw;
+}
+
+.shop-grid {
+  margin-top: 22vw;
+  margin-left: 16vw;
+  display: grid;
+  grid-template-columns: repeat(2, 39vw);
+  gap: 1vw;
+  padding: 2vw;
+  justify-content: center;
+}
+
+.product-card {
+  height: 20vw;
+  background-color: #004cdc;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 1vw;
+  overflow: hidden;
+  box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
+  padding: 1vw;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-image img {
+  width: 14.5vw;
+}
+.product-info {
+  width: 20vw;
+}
+
+.product-info h3 {
+  margin: 0.5vw 0 0;
+  font-family: "LeagueGothic";
+  letter-spacing: 0.1vw;
+  font-size: 2vw;
+  text-transform: uppercase;
+  color: white;
+}
+
+.poster-card {
+  display: flex;
+  flex-direction: row;
+  gap: -12vw;
+}
+
+.base_btn {
+  width: 14vw;
+  height: 4vw;
+  margin-top: 6.5vw;
+  background-color: #004cdc;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.base_btn:hover {
+  background-color: #316ad5;
+}

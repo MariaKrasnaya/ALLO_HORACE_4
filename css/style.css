@@ -1,4 +1,5 @@
 @import "./reset.css"; /* сбрoc настроек браузера */
 @import "./main.css"; /* контент / содержимое  */
 @import "./afisha.css";
+@import "./merch.css";
 @import "./adaptive.css"; /* адаптивность */
